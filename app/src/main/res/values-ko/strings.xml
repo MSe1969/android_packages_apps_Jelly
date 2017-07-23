@@ -42,6 +42,7 @@
   <string name="menu_desktop_mode">PC 버전으로 보기</string>
   <!-- Menu action: enable phone mode -->
   <string name="menu_mobile_mode">모바일 버전으로 보기</string>
+  <!-- Menu action: search in page -->
   <!-- Share webPage: "send to" dialog title -->
   <string name="share_title">보내기</string>
   <!-- Dialog action: dismiss -->
@@ -101,9 +102,13 @@
   <!-- Settings: clear cookie toast confirmation -->
   <string name="pref_cookie_clear_done">모든 쿠키를 삭제했습니다.</string>
   <!-- Settings: do not track preference title -->
+  <string name="pref_do_not_track_title">추적 안 함 요청</string>
   <!-- Settings: do not track preference summary -->
+  <string name="pref_do_not_track_summary">방문하는 사이트에 추적 안 함 요청 보내기</string>
   <!-- Settings: save form data title -->
+  <string name="pref_save_form_data_title">양식 정보 저장</string>
   <!-- Settings: suggestions provider title -->
+  <string name="pref_suggestions_provider">제안 공급자</string>
   <!-- History: title -->
   <string name="history_title">방문 기록</string>
   <!-- History: empty status text -->
@@ -149,4 +154,7 @@
   <!-- Auth dialog: login button -->
   <string name="auth_dialog_login">로그인</string>
   <!-- Launcher shortcut: new incognito tab -->
+  <string name="shortcut_new_incognito_tab">새 시크릿 탭</string>
+  <!-- Suggestions provider: no suggestions provider -->
+  <!-- Search in page: search hint -->
 </resources>

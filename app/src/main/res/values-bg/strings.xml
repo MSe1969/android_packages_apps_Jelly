@@ -42,6 +42,7 @@
   <string name="menu_desktop_mode">Превключи на версията за компютър</string>
   <!-- Menu action: enable phone mode -->
   <string name="menu_mobile_mode">Превключи на мобилна версия</string>
+  <!-- Menu action: search in page -->
   <!-- Share webPage: "send to" dialog title -->
   <string name="share_title">Изпрати до</string>
   <!-- Dialog action: dismiss -->
@@ -101,9 +102,13 @@
   <!-- Settings: clear cookie toast confirmation -->
   <string name="pref_cookie_clear_done">Всички бисквитки са изчистени</string>
   <!-- Settings: do not track preference title -->
+  <string name="pref_do_not_track_title">Без проследяване</string>
   <!-- Settings: do not track preference summary -->
+  <string name="pref_do_not_track_summary">Изпраща искане до уеб сайтовете да не проследяват дейността</string>
   <!-- Settings: save form data title -->
+  <string name="pref_save_form_data_title">Запазване на данни за формуляри</string>
   <!-- Settings: suggestions provider title -->
+  <string name="pref_suggestions_provider">Предложения на доставчици</string>
   <!-- History: title -->
   <string name="history_title">История</string>
   <!-- History: empty status text -->
@@ -149,4 +154,7 @@
   <!-- Auth dialog: login button -->
   <string name="auth_dialog_login">Вход</string>
   <!-- Launcher shortcut: new incognito tab -->
+  <string name="shortcut_new_incognito_tab">Нов раздел в режим „Инкогнито“</string>
+  <!-- Suggestions provider: no suggestions provider -->
+  <!-- Search in page: search hint -->
 </resources>

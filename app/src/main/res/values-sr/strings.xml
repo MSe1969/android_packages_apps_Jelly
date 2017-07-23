@@ -42,6 +42,7 @@
   <string name="menu_desktop_mode">Пређи на верзију за рачунаре</string>
   <!-- Menu action: enable phone mode -->
   <string name="menu_mobile_mode">Пређи на мобилну верзију</string>
+  <!-- Menu action: search in page -->
   <!-- Share webPage: "send to" dialog title -->
   <string name="share_title">Дељење</string>
   <!-- Dialog action: dismiss -->
@@ -101,9 +102,13 @@
   <!-- Settings: clear cookie toast confirmation -->
   <string name="pref_cookie_clear_done">Сви колачићи су очишћени.</string>
   <!-- Settings: do not track preference title -->
+  <string name="pref_do_not_track_title">Не желим да ме прате</string>
   <!-- Settings: do not track preference summary -->
+  <string name="pref_do_not_track_summary">Шаље захтев „Не желим да ме прате“ сајтовима које посећујете.</string>
   <!-- Settings: save form data title -->
+  <string name="pref_save_form_data_title">Чување података из образаца</string>
   <!-- Settings: suggestions provider title -->
+  <string name="pref_suggestions_provider">Добављач предлога</string>
   <!-- History: title -->
   <string name="history_title">Историја</string>
   <!-- History: empty status text -->
@@ -149,4 +154,7 @@
   <!-- Auth dialog: login button -->
   <string name="auth_dialog_login">Пријави ме</string>
   <!-- Launcher shortcut: new incognito tab -->
+  <string name="shortcut_new_incognito_tab">Картица без архивирања</string>
+  <!-- Suggestions provider: no suggestions provider -->
+  <!-- Search in page: search hint -->
 </resources>

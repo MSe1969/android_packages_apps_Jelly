@@ -39,9 +39,8 @@
   <!-- Menu action: open selected link in a new tab -->
   <string name="menu_in_new_tab">Mở trong tab mới</string>
   <!-- Menu action: enable desktop mode -->
-  <string name="menu_desktop_mode">Chuyển sang trang web dành cho máy tính để bàn</string>
   <!-- Menu action: enable phone mode -->
-  <string name="menu_mobile_mode">Chuyển sang trang web dành cho thiết bị di động</string>
+  <!-- Menu action: search in page -->
   <!-- Share webPage: "send to" dialog title -->
   <string name="share_title">Gửi đến</string>
   <!-- Dialog action: dismiss -->
@@ -101,9 +100,13 @@
   <!-- Settings: clear cookie toast confirmation -->
   <string name="pref_cookie_clear_done">Đã xóa tất cả cookie</string>
   <!-- Settings: do not track preference title -->
+  <string name="pref_do_not_track_title">Không Theo Dõi</string>
   <!-- Settings: do not track preference summary -->
+  <string name="pref_do_not_track_summary">Gửi một yêu cầu Không Theo Dõi các trang web bạn truy cập</string>
   <!-- Settings: save form data title -->
+  <string name="pref_save_form_data_title">Lưu dữ liệu biểu mẫu</string>
   <!-- Settings: suggestions provider title -->
+  <string name="pref_suggestions_provider">Nhà cung cấp đề xuất</string>
   <!-- History: title -->
   <string name="history_title">Lịch sử</string>
   <!-- History: empty status text -->
@@ -149,4 +152,7 @@
   <!-- Auth dialog: login button -->
   <string name="auth_dialog_login">Đăng nhập</string>
   <!-- Launcher shortcut: new incognito tab -->
+  <string name="shortcut_new_incognito_tab">Tab ẩn danh mới</string>
+  <!-- Suggestions provider: no suggestions provider -->
+  <!-- Search in page: search hint -->
 </resources>

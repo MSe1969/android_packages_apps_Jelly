@@ -19,7 +19,7 @@
   <!-- Menu action: create new tab -->
   <string name="menu_new_tab">Novo separador</string>
   <!-- Menu action: create new incognito tab -->
-  <string name="menu_incognito">Separador incógnito</string>
+  <string name="menu_incognito">Separador privado</string>
   <!-- Menu action: reload current page -->
   <string name="menu_reload">Recarregar</string>
   <!-- Menu action: add current page to favorites -->
@@ -42,6 +42,7 @@
   <string name="menu_desktop_mode">Mudar para a versão de computador</string>
   <!-- Menu action: enable phone mode -->
   <string name="menu_mobile_mode">Mudar para a versão móvel</string>
+  <!-- Menu action: search in page -->
   <!-- Share webPage: "send to" dialog title -->
   <string name="share_title">Enviar para</string>
   <!-- Dialog action: dismiss -->
@@ -101,8 +102,11 @@
   <!-- Settings: clear cookie toast confirmation -->
   <string name="pref_cookie_clear_done">Todas as cookies foram apagadas</string>
   <!-- Settings: do not track preference title -->
+  <string name="pref_do_not_track_title">Não monitorizar</string>
   <!-- Settings: do not track preference summary -->
+  <string name="pref_do_not_track_summary">Enviar às paginas que visitar um pedido para não ser monitorizado</string>
   <!-- Settings: save form data title -->
+  <string name="pref_save_form_data_title">Guardar dados do formulário</string>
   <!-- Settings: suggestions provider title -->
   <!-- History: title -->
   <string name="history_title">Histórico</string>
@@ -149,4 +153,7 @@
   <!-- Auth dialog: login button -->
   <string name="auth_dialog_login">Iniciar sessão</string>
   <!-- Launcher shortcut: new incognito tab -->
+  <string name="shortcut_new_incognito_tab">Novo separador privado</string>
+  <!-- Suggestions provider: no suggestions provider -->
+  <!-- Search in page: search hint -->
 </resources>

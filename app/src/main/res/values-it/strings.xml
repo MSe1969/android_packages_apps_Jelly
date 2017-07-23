@@ -42,6 +42,7 @@
   <string name="menu_desktop_mode">Passa al sito desktop</string>
   <!-- Menu action: enable phone mode -->
   <string name="menu_mobile_mode">Passa al sito mobile</string>
+  <!-- Menu action: search in page -->
   <!-- Share webPage: "send to" dialog title -->
   <string name="share_title">Invia a</string>
   <!-- Dialog action: dismiss -->
@@ -101,9 +102,13 @@
   <!-- Settings: clear cookie toast confirmation -->
   <string name="pref_cookie_clear_done">I cookie sono stati cancellati</string>
   <!-- Settings: do not track preference title -->
+  <string name="pref_do_not_track_title">Non tracciare</string>
   <!-- Settings: do not track preference summary -->
+  <string name="pref_do_not_track_summary">Invia una richiesta di non tracciabilità ai siti Web visitati</string>
   <!-- Settings: save form data title -->
+  <string name="pref_save_form_data_title">Salva i dati moduli</string>
   <!-- Settings: suggestions provider title -->
+  <string name="pref_suggestions_provider">Provider per suggerimenti</string>
   <!-- History: title -->
   <string name="history_title">Cronologia</string>
   <!-- History: empty status text -->
@@ -149,4 +154,7 @@
   <!-- Auth dialog: login button -->
   <string name="auth_dialog_login">Accedi</string>
   <!-- Launcher shortcut: new incognito tab -->
+  <string name="shortcut_new_incognito_tab">Scheda in incognito</string>
+  <!-- Suggestions provider: no suggestions provider -->
+  <!-- Search in page: search hint -->
 </resources>
