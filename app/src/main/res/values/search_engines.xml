@@ -34,6 +34,6 @@
         <item>https://encrypted.google.com/search?q={searchTerms}</item>
         <item>https://search.yahoo.com/p={searchTerms}</item>
         <item>https://www.startpage.com/do/dsearch?query={searchTerms}&amp;cat=web&amp;pl=opensearch&amp;language=english</item>
-        <item>https://yandex.ru/search/?text={searchTerms}</item>
+        <item>https://yandex.com/?q={searchTerms}</item>
     </string-array>
 </resources>

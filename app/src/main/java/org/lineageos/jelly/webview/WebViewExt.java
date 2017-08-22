@@ -25,9 +25,9 @@ import android.util.Log;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 
+import org.lineageos.jelly.ui.UrlBarController;
 import org.lineageos.jelly.utils.PrefsUtils;
 import org.lineageos.jelly.utils.UrlUtils;
 
@@ -98,9 +98,10 @@ public class WebViewExt extends WebView {
         getSettings().setSaveFormData(!mIncognito && PrefsUtils.getSaveFormData(mActivity));
         getSettings().setBuiltInZoomControls(true);
         getSettings().setDisplayZoomControls(false);
-        getSettings().setDomStorageEnabled(true);
-
-        setWebViewClient(new WebClient());
+        getSettings().setAppCacheEnabled(!mIncognito);
+        getSettings().setDatabaseEnabled(!mIncognito);
+        getSettings().setDomStorageEnabled(!mIncognito);
+        getSettings().setAppCachePath(mActivity.getDir("appcache", Context.MODE_PRIVATE).getPath());
 
         setOnLongClickListener(new OnLongClickListener() {
             boolean shouldAllowDownload;
@@ -133,7 +134,8 @@ public class WebViewExt extends WebView {
         if (matcher.matches()) {
             String mobileDevice = matcher.group(2).replace("; wv", "");
             mMobileUserAgent = matcher.group(1) + mobileDevice + matcher.group(3);
-            mDesktopUserAgent = matcher.group(1) + DESKTOP_DEVICE + matcher.group(3);
+            mDesktopUserAgent = matcher.group(1) + DESKTOP_DEVICE + matcher.group(3)
+                    .replace(" Mobile ", " ");
             getSettings().setUserAgentString(mMobileUserAgent);
         } else {
             Log.e(TAG, "Couldn't parse the user agent");
@@ -146,14 +148,14 @@ public class WebViewExt extends WebView {
         }
     }
 
-    public void init(WebViewExtActivity activity, EditText editText,
+    public void init(WebViewExtActivity activity, UrlBarController urlBarController,
                      ProgressBar progressBar, boolean incognito) {
         mActivity = activity;
         mIncognito = incognito;
-        ChromeClient chromeClient = new ChromeClient(activity, incognito);
-        chromeClient.bindEditText(editText);
-        chromeClient.bindProgressBar(progressBar);
+        ChromeClient chromeClient = new ChromeClient(activity, incognito,
+                urlBarController, progressBar);
         setWebChromeClient(chromeClient);
+        setWebViewClient(new WebClient(urlBarController));
         setup();
     }
 
